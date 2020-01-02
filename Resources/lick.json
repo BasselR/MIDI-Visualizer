@@ -1,0 +1,293 @@
+{
+  "header": {
+    "PPQ": 96,
+    "timeSignature": [
+      4,
+      4
+    ],
+    "bpm": 120,
+    "name": ""
+  },
+  "tempo": [
+    {
+      "absoluteTime": 0,
+      "seconds": 0,
+      "bpm": 120
+    },
+    {
+      "absoluteTime": 0,
+      "seconds": 0,
+      "bpm": 120
+    },
+    {
+      "absoluteTime": 0,
+      "seconds": 0,
+      "bpm": 120
+    }
+  ],
+  "timeSignature": [
+    {
+      "absoluteTime": 0,
+      "seconds": 0,
+      "numerator": 4,
+      "denominator": 2,
+      "click": 24,
+      "notesQ": 8
+    }
+  ],
+  "startTime": 0,
+  "duration": 2.5,
+  "tracks": [
+    {
+      "startTime": 0,
+      "duration": 0,
+      "length": 0,
+      "notes": [],
+      "controlChanges": {},
+      "id": 0
+    },
+    {
+      "startTime": 0,
+      "duration": 0,
+      "length": 0,
+      "notes": [],
+      "controlChanges": {},
+      "id": 1
+    },
+    {
+      "startTime": 0,
+      "duration": 2.5,
+      "length": 7,
+      "notes": [
+        {
+          "name": "D3",
+          "midi": 50,
+          "time": 0,
+          "velocity": 0.7874015748031497,
+          "duration": 0.25
+        },
+        {
+          "name": "E3",
+          "midi": 52,
+          "time": 0.25,
+          "velocity": 0.7874015748031497,
+          "duration": 0.25
+        },
+        {
+          "name": "F3",
+          "midi": 53,
+          "time": 0.5,
+          "velocity": 0.7874015748031497,
+          "duration": 0.25
+        },
+        {
+          "name": "G3",
+          "midi": 55,
+          "time": 0.75,
+          "velocity": 0.7874015748031497,
+          "duration": 0.25
+        },
+        {
+          "name": "E3",
+          "midi": 52,
+          "time": 1,
+          "velocity": 0.7874015748031497,
+          "duration": 0.5
+        },
+        {
+          "name": "C3",
+          "midi": 48,
+          "time": 1.5,
+          "velocity": 0.7874015748031497,
+          "duration": 0.25
+        },
+        {
+          "name": "D3",
+          "midi": 50,
+          "time": 1.75,
+          "velocity": 0.7874015748031497,
+          "duration": 0.75
+        }
+      ],
+      "controlChanges": {
+        "6": [
+          {
+            "number": 6,
+            "time": 0,
+            "value": 0.09448818897637795
+          },
+          {
+            "number": 6,
+            "time": 0,
+            "value": 0.09448818897637795
+          },
+          {
+            "number": 6,
+            "time": 0,
+            "value": 0.09448818897637795
+          },
+          {
+            "number": 6,
+            "time": 4,
+            "value": 0.09448818897637795
+          },
+          {
+            "number": 6,
+            "time": 4.005208333333333,
+            "value": 0.09448818897637795
+          },
+          {
+            "number": 6,
+            "time": 4.005208333333333,
+            "value": 0.09448818897637795
+          }
+        ],
+        "7": [
+          {
+            "number": 7,
+            "time": 0,
+            "value": 0.7874015748031497
+          },
+          {
+            "number": 7,
+            "time": 0,
+            "value": 0.7874015748031497
+          },
+          {
+            "number": 7,
+            "time": 0,
+            "value": 0.7874015748031497
+          },
+          {
+            "number": 7,
+            "time": 0,
+            "value": 0.7874015748031497
+          },
+          {
+            "number": 7,
+            "time": 4,
+            "value": 0.7874015748031497
+          },
+          {
+            "number": 7,
+            "time": 4.005208333333333,
+            "value": 0.7874015748031497
+          },
+          {
+            "number": 7,
+            "time": 4.005208333333333,
+            "value": 0.7874015748031497
+          }
+        ],
+        "10": [
+          {
+            "number": 10,
+            "time": 0,
+            "value": 0.5039370078740157
+          },
+          {
+            "number": 10,
+            "time": 0,
+            "value": 0.5039370078740157
+          },
+          {
+            "number": 10,
+            "time": 0,
+            "value": 0.5039370078740157
+          },
+          {
+            "number": 10,
+            "time": 0,
+            "value": 0.5039370078740157
+          },
+          {
+            "number": 10,
+            "time": 4,
+            "value": 0.5039370078740157
+          },
+          {
+            "number": 10,
+            "time": 4.005208333333333,
+            "value": 0.5039370078740157
+          },
+          {
+            "number": 10,
+            "time": 4.005208333333333,
+            "value": 0.5039370078740157
+          }
+        ],
+        "100": [
+          {
+            "number": 100,
+            "time": 0,
+            "value": 0
+          },
+          {
+            "number": 100,
+            "time": 0,
+            "value": 0
+          },
+          {
+            "number": 100,
+            "time": 0,
+            "value": 0
+          },
+          {
+            "number": 100,
+            "time": 4,
+            "value": 0
+          },
+          {
+            "number": 100,
+            "time": 4.005208333333333,
+            "value": 0
+          },
+          {
+            "number": 100,
+            "time": 4.005208333333333,
+            "value": 0
+          }
+        ],
+        "101": [
+          {
+            "number": 101,
+            "time": 0,
+            "value": 0
+          },
+          {
+            "number": 101,
+            "time": 0,
+            "value": 0
+          },
+          {
+            "number": 101,
+            "time": 0,
+            "value": 0
+          },
+          {
+            "number": 101,
+            "time": 4,
+            "value": 0
+          },
+          {
+            "number": 101,
+            "time": 4.005208333333333,
+            "value": 0
+          },
+          {
+            "number": 101,
+            "time": 4.005208333333333,
+            "value": 0
+          }
+        ]
+      },
+      "id": 2,
+      "name": "MIDITrack",
+      "instrumentNumber": 0,
+      "instrument": "acoustic grand piano",
+      "instrumentFamily": "piano",
+      "channelNumber": 0,
+      "isPercussion": false
+    }
+  ]
+}
