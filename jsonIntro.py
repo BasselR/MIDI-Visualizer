@@ -13,7 +13,7 @@ for track in song["tracks"]:
     if track["notes"]:
         noteList = track["notes"]
 
-print("Parsing {0} with {1} notes\n".format(fileName, len(noteList)))
+print("Parsing {} with {} notes\n".format(fileName, len(noteList)))
 
-for i in noteList:
+for i in noteList: 
     print(i)
