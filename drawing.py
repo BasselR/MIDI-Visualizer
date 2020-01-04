@@ -20,7 +20,7 @@ mainloop = True
 
 class Ball(object):
     """this is not a native pygame sprite but instead a pygame surface"""
-    def __init__(self, radius = 5, color=(255,0,255), x=320, y=240):
+    def __init__(self, radius = 30, color=(255,0,255), x=320, y=240):
         """create a (black) surface and paint a blue ball on it"""
         self.radius = radius
         self.color = color
@@ -49,7 +49,7 @@ while mainloop:
     #x += vx
     myBall.x += 2
     screen.blit(background, (0, 0))
-    myBall.blit(background)
+    myBall.blit(screen)
     #pygame.draw.circle(screen, (255, 0, 0), (x, y), 30)
 
     if(x + 30 > screenRect.width or x - 30 < 0):
