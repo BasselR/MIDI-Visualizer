@@ -6,14 +6,14 @@ background = pygame.Surface(screen.get_size())
 background.fill((0, 0, 0))
 
 x, y = 50, 50
-vx = 3
+vx = 200
 
 clock = pygame.time.Clock()
-FPS = 60
+FPS = 100
 playtime = 0
+frameCounter = 0
 
 screenRect = screen.get_rect()
-
 screen.blit(background, (0, 0))
 
 mainloop = True
@@ -43,16 +43,27 @@ myBall = Ball()
 
 while mainloop:
 
-    milliseconds = clock.tick(FPS)
-    playtime += milliseconds / 1000.0
+    milliseconds = clock.tick(FPS)  # milliseconds passed since last frame
+    seconds = milliseconds / 1000.0 # seconds passed since last frame (float)
 
-    #x += vx
-    myBall.x += 2
+    frameCounter += 1
+    if frameCounter % 100 == 0:
+        print(seconds)
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            mainloop = False # pygame window closed by user
+        elif event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_q: 
+                FPS *= 2
+            elif event.key == pygame.K_e:
+                FPS /= 2
+
+    myBall.x += vx * seconds
     screen.blit(background, (0, 0))
     myBall.blit(screen)
-    #pygame.draw.circle(screen, (255, 0, 0), (x, y), 30)
 
-    if(x + 30 > screenRect.width or x - 30 < 0):
+    if(myBall.x + 60 > screenRect.width or myBall.x < 0):
         vx *= -1
 
 
