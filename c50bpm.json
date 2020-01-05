@@ -1,0 +1,129 @@
+{
+  "header": {
+    "PPQ": 96,
+    "timeSignature": [
+      4,
+      4
+    ],
+    "bpm": 100,
+    "name": ""
+  },
+  "tempo": [
+    {
+      "absoluteTime": 0,
+      "seconds": 0,
+      "bpm": 100
+    },
+    {
+      "absoluteTime": 0,
+      "seconds": 0,
+      "bpm": 100
+    },
+    {
+      "absoluteTime": 0,
+      "seconds": 0,
+      "bpm": 100
+    }
+  ],
+  "timeSignature": [
+    {
+      "absoluteTime": 0,
+      "seconds": 0,
+      "numerator": 4,
+      "denominator": 2,
+      "click": 24,
+      "notesQ": 8
+    }
+  ],
+  "startTime": 0,
+  "duration": 4.8,
+  "tracks": [
+    {
+      "startTime": 0,
+      "duration": 0,
+      "length": 0,
+      "notes": [],
+      "controlChanges": {},
+      "id": 0
+    },
+    {
+      "startTime": 0,
+      "duration": 0,
+      "length": 0,
+      "notes": [],
+      "controlChanges": {},
+      "id": 1
+    },
+    {
+      "startTime": 0,
+      "duration": 4.8,
+      "length": 8,
+      "notes": [
+        {
+          "name": "C4",
+          "midi": 60,
+          "time": 0,
+          "velocity": 0.7086614173228346,
+          "duration": 0.6
+        },
+        {
+          "name": "D4",
+          "midi": 62,
+          "time": 0.6,
+          "velocity": 0.7086614173228346,
+          "duration": 0.6
+        },
+        {
+          "name": "E4",
+          "midi": 64,
+          "time": 1.2,
+          "velocity": 0.7086614173228346,
+          "duration": 0.5999999999999999
+        },
+        {
+          "name": "F4",
+          "midi": 65,
+          "time": 1.7999999999999998,
+          "velocity": 0.7086614173228346,
+          "duration": 0.6000000000000001
+        },
+        {
+          "name": "G4",
+          "midi": 67,
+          "time": 2.4,
+          "velocity": 0.7086614173228346,
+          "duration": 0.6000000000000001
+        },
+        {
+          "name": "A4",
+          "midi": 69,
+          "time": 3,
+          "velocity": 0.7086614173228346,
+          "duration": 0.6000000000000001
+        },
+        {
+          "name": "B4",
+          "midi": 71,
+          "time": 3.6,
+          "velocity": 0.7086614173228346,
+          "duration": 0.6000000000000001
+        },
+        {
+          "name": "C5",
+          "midi": 72,
+          "time": 4.2,
+          "velocity": 0.7086614173228346,
+          "duration": 0.5999999999999996
+        }
+      ],
+      "controlChanges": {},
+      "id": 2,
+      "name": "MIDITrack",
+      "instrumentNumber": 0,
+      "instrument": "acoustic grand piano",
+      "instrumentFamily": "piano",
+      "channelNumber": 0,
+      "isPercussion": false
+    }
+  ]
+}
