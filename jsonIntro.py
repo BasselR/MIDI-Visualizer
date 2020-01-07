@@ -2,10 +2,9 @@ import json
 import sys
 import globalVars
 
-
 def jsonInit():
     #fileName = sys.argv[1]
-    fileName = 'maybeShorter.json'
+    fileName = 'Resources/bassTest.json'
 
     #Loads entire MIDI file as one big JSON Object into a python dictionary 
     with open(fileName) as json_file:
@@ -18,7 +17,8 @@ def jsonInit():
         if track["notes"]:
             globalVars.noteList = track["notes"]   #Assign the first non-empty "note" list as the noteList
 
-    # print("Parsing {} with {} notes\n".format(fileName, len(noteList)))
+def jsonPrint():
+    print("Parsing {} with {} notes\n".format(fileName, len(globalVars.noteList)))
 
-    # for i in noteList: 
-    #     print(i)
+    for i in globalVars.noteList: 
+        print(i)
