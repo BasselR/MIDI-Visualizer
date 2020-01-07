@@ -2,10 +2,16 @@ import pygame
 import jsonIntro
 import globalVars
 
+#Current calculations are assuming that 50 px will pass in 0.25 seconds = 200 px / s
+
+pygame.mixer.pre_init(44100, -16, 2, 2048)
+
 pygame.init()
 screen = pygame.display.set_mode((640,480))
 background = pygame.Surface(screen.get_size())
 background.fill((0, 0, 0))
+
+pygame.mixer.music.load('bassTest.mp3')
 
 x, y = 50, 50
 vx = 200
@@ -22,7 +28,7 @@ mainloop = True
 
 class Ball(object):
     """this is not a native pygame sprite but instead a pygame surface"""
-    def __init__(self, x, y, radius = 30, color=(255,0,255)):
+    def __init__(self, x, y, radius = 15, color=(255,0,255)):
         """create a (black) surface and paint a blue ball on it"""
         self.radius = radius
         self.color = color
@@ -41,12 +47,17 @@ class Ball(object):
         """blit the Ball on the background"""
         background.blit(self.surface, (self.x, self.y))
 
-myBall = Ball(300, 50)
+#myBall = Ball(300, 50)
 
 jsonIntro.jsonInit()
 
+balls = []
+
 for note in globalVars.noteList:
-    print(note)
+    #Ball's x position = starting time * 200 pixels
+    balls.append(Ball((note["time"] * 200) + 300, 50)) #need to add offset: a note that has "time" == 0 will start at x = 0 -- left side of screen
+
+pygame.mixer.music.play()
 
 while mainloop:
 
@@ -55,8 +66,9 @@ while mainloop:
 
     frameCounter += 1
     if frameCounter % 100 == 0:
-        pass
-        #print("FPS: {}, Seconds per frame: {}".format(FPS, seconds))
+        #pass
+        print("FPS: {}, Seconds per frame: {}".format(FPS, seconds))
+        print(pygame.mixer.music.get_busy())
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -67,12 +79,17 @@ while mainloop:
             elif event.key == pygame.K_e:
                 FPS /= 2
 
-    myBall.x += vx * seconds
     screen.blit(background, (0, 0))
-    myBall.blit(screen)
 
-    if(myBall.x + 60 > screenRect.width or myBall.x < 0):
-        vx *= -1
+    pygame.draw.line(background, (255, 255, 255), (300, 0), (300, 480), 5)
+
+    for ball in balls:
+        ball.blit(screen)
+        ball.x -= vx * seconds
+
+
+    # if(myBall.x + 60 > screenRect.width or myBall.x < 0):
+    #     vx *= -1
 
 
     for event in pygame.event.get():
