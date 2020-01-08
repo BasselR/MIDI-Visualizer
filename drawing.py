@@ -65,8 +65,8 @@ diff = maxMidi - minMidi
 
 for note in globalVars.noteList:
     #Ball's x position = starting time * 200 pixels
-    balls.append(Ball((note["time"] * 200) + 300, 440 - ((maxMidi - note["midi"]) / diff)))
-    print(note["midi"], 440 - ((maxMidi - note["midi"]) / diff))
+    balls.append(Ball((note["time"] * 200) + 300, 40 + ((maxMidi - note["midi"]) / diff) * 400))
+    print(note["midi"], 440 + ((maxMidi - note["midi"]) / diff))
     #print(diff)
 
 pygame.mixer.music.play()
