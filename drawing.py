@@ -52,10 +52,22 @@ class Ball(object):
 jsonIntro.jsonInit()
 
 balls = []
+maxMidi = globalVars.noteList[0]["midi"]
+minMidi = globalVars.noteList[0]["midi"]
+
+for note in globalVars.noteList:
+    if note["midi"] > maxMidi: 
+        maxMidi = note["midi"]
+    if note["midi"] < minMidi: 
+        minMidi = note["midi"]
+
+diff = maxMidi - minMidi
 
 for note in globalVars.noteList:
     #Ball's x position = starting time * 200 pixels
-    balls.append(Ball((note["time"] * 200) + 300, 50)) #need to add offset: a note that has "time" == 0 will start at x = 0 -- left side of screen
+    balls.append(Ball((note["time"] * 200) + 300, 440 - ((maxMidi - note["midi"]) / diff)))
+    print(note["midi"], 440 - ((maxMidi - note["midi"]) / diff))
+    #print(diff)
 
 pygame.mixer.music.play()
 
